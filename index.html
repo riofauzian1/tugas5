@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5</title>
+    <script>
+        function printLooping() {
+            var sentence = document.getElementById("inputText1").value;
+
+            var loopCount = document.getElementById("inputText2").value;
+
+            var output = "<ol>";
+            for (var i = 0; i < loopCount; i++) {
+                output += "<li>" + sentence + "</li>";
+            }
+            output += "</ol>";
+            document.getElementById("outputText").innerHTML = output;
+        }
+    </script>
+</head>
+<body>
+    <h1>Tugas 5 Rio Fauzian</h1>
+    <label for="inputText1">Pesan:</label>
+    <input type="text" id="inputText1"><br>
+
+    <label for="inputText2">Berapa kali:</label>
+    <input type="number" id="inputText2" ><br>
+
+    <button onclick="printLooping()">Cetak</button>
+
+    <div id="outputText"></div>
+</body>
+</html>
